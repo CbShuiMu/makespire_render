@@ -38,13 +38,13 @@ npm run start:renderer
 curl.exe --fail http://127.0.0.1:3001/api/v1/render-image -H "Content-Type: application/json" --data-binary "@card.json" -o card.png
 ```
 
-也可以直接提交仓库附带的卡牌与遗物示例。批量接口按输入顺序返回 NDJSON，每行成功结果的 `png` 字段为 Base64 编码的 PNG。
+[render-images.json](md/render-images.json) 包含一张卡牌和一件遗物。取其中一个对象即可调用单张接口，也可以将整个数组提交给批量接口。批量接口按输入顺序返回 NDJSON，每行成功结果的 `png` 字段为 Base64 编码的 PNG。
 
 ```powershell
 curl.exe --fail http://127.0.0.1:3001/api/v1/render-images -H "Content-Type: application/json" --data-binary "@md/render-images.json" -o render-results.ndjson
 ```
 
-单张本地请求上限为 24 MiB。批量请求每次最多 6 项，总上限为 8 MiB。字段、示例、错误码和 NDJSON 解码命令见 [图片生成 API](md/image-api.md)。
+单张本地请求上限为 24 MiB。批量请求每次最多 6 项，总上限为 8 MiB。[image-api.md](md/image-api.md) 说明单张和批量接口的请求字段、响应格式、错误码和限额，并提供 NDJSON 解码示例。
 
 成功导出的图片会写入归档目录中的 `cards/` 或 `relics/`，并记录到 `exports.sqlite` 和按北京时间汇总的 `daily-exports.csv`。通过 `EXPORT_ARCHIVE_DIR` 指定位置，默认使用 `D:/makespire`。
 
