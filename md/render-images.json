@@ -1,0 +1,44 @@
+[
+  {
+    "object": "card",
+    "title": "余烬之刃",
+    "type": "Attack",
+    "typeText": "攻击",
+    "rarity": "Common",
+    "cardPool": "ironclad",
+    "cost": "1",
+    "upgradedCost": "1",
+    "description": "造成 [blue]8[/blue] 点伤害。",
+    "upgradedDescription": "造成 [blue]11[/blue] 点伤害。",
+    "upgraded": false,
+    "starEnergyEnabled": false,
+    "starEnergyCost": "",
+    "language": "zh",
+    "watermark": false,
+    "extraDescriptions": {},
+    "style": {
+      "thumbnail": null,
+      "energy": {
+        "type": "ironclad",
+        "customAsset": null
+      },
+      "cardPoolCustomAsset": null
+    }
+  },
+  {
+    "object": "relic",
+    "name": "余烬护符",
+    "rarity": "Rare",
+    "typeText": "稀有遗物",
+    "description": "战斗开始时，获得 [blue]2[/blue] 点<格挡>。",
+    "flavor": "火光映在旧护符上。",
+    "language": "zh",
+    "watermark": false,
+    "extraDescriptions": {
+      "格挡": "抵挡伤害。"
+    },
+    "style": {
+      "thumbnail": null
+    }
+  }
+]

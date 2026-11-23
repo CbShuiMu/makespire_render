@@ -1,0 +1,18 @@
+{
+  "name": "makespire_render",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:native": "node scripts/build-native.mjs",
+    "start:renderer": "node server/index.js",
+    "test:renderer": "node --test server/exportArchive.test.js server/nativeImages.test.js",
+    "test:native": "node --test --test-concurrency=1 server/native-tests/*.test.js"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "engines": {
+    "node": ">=22.23.0"
+  }
+}

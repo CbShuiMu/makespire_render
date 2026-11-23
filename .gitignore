@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+*.log
+*.local
+
+native-renderer/.godot/
+native-renderer/bin/
+native-renderer/obj/
+native-renderer/editor_assets/
+native-renderer/*.local.json
+native-renderer/*.cs.uid
+
+/card.json
+/relic.json
+/*.png
+/*.ndjson
